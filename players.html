@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASL - Players</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root{--primary:#241e72;--accent:#ffcc00;--grey:#f5f7fa;--text:#333;--white:#ffffff;--shadow:0 8px 20px rgba(0,0,0,.08);}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:var(--grey);color:var(--text);line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:var(--primary);color:var(--white);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+        .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+        .logo{font-size:1.5rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+        .nav-links{display:flex;gap:1.5rem;list-style:none}
+        .nav-links a{color:var(--white);text-decoration:none;font-weight:500;transition:.3s}
+        .nav-links a:hover{color:var(--accent)}
+        .page-title{background:linear-gradient(rgba(30,60,114,.8),rgba(30,60,114,.9)),url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1350&q=80') center/cover;color:var(--white);text-align:center;padding:5rem 0}
+        .page-title h1{font-size:2.5rem;margin-bottom:.5rem}
+        .section{padding:3rem 0}
+        .position-title{text-align:center;font-size:1.8rem;margin:2rem 0 .5rem;color:var(--primary);position:relative}
+        .position-title::after{content:'';width:80px;height:3px;background:var(--accent);position:absolute;bottom:-8px;left:50%;transform:translateX(-50%)}
+        .players{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+        .player{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);text-align:center;transition:.3s}
+        .player:hover{transform:translateY(-6px)}
+        .player-number{background:var(--primary);color:var(--white);font-size:1.4rem;font-weight:700;padding:.6rem}
+        .player-photo{height:180px;background:#eef2f7;display:flex;align-items:center;justify-content:center;font-size:4rem;color:var(--primary)}
+        .player-info{padding:1.2rem}
+        .player-name{font-size:1.1rem;font-weight:600;color:var(--primary)}
+        .player-age{font-size:.85rem;color:#777;margin-bottom:.8rem}
+        .player-stats{display:flex;justify-content:space-around;background:#f5f7fa;padding:.6rem;border-radius:6px}
+        .stat-val{font-weight:700;font-size:1rem;color:var(--primary)}
+        .stat-label{font-size:.65rem;color:#666}
+        footer{background:var(--primary);color:var(--white);text-align:center;padding:1.5rem 0}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo"><i class="fas fa-futbol"></i> FASL</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="players.html" class="active">Players</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="page-title">
+    <div class="container">
+        <h1>Our Team</h1>
+        <p>Meet the talents representing the academy</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="position-title">Goalkeepers</h2>
+        <div class="players">
+            <div class="player">
+                <div class="player-number">1</div>
+                <div><img src="https://i.pinimg.com/736x/3c/58/f2/3c58f26c74f1b29e7752b7f216ae82c5.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Abdul Karajab</div>
+                    <div class="player-age">25 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">42</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">18</div><div class="stat-label">Clean Sheets</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">25</div>
+                <div><img src="https://i.pinimg.com/736x/12/b7/48/12b748f99a02b12dc1fcde7f117e3126.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Noah Kamaral</div>
+                    <div class="player-age">22 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">15</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">7</div><div class="stat-label">Clean Sheets</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">33</div>
+                <div><img src="https://i.pinimg.com/1200x/6a/27/00/6a2700858cf2a2429adbf0f19203f882.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Ramir Joe</div>
+                    <div class="player-age">24 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">28</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">12</div><div class="stat-label">Clean Sheets</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="position-title">Defenders</h2>
+        <div class="players">
+            <div class="player">
+                <div class="player-number">2</div>
+                <div><img src="https://i.pinimg.com/1200x/a1/5d/a3/a15da320955570d7f3318fc02c4943b8.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Eric Tarowallie</div>
+                    <div class="player-age">26 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">38</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">4</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">4</div>
+                <div><img src="https://i.pinimg.com/736x/bd/f0/d7/bdf0d7c34ed04177fdd5c6a1716c97a4.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">John Barber</div>
+                    <div class="player-age">27 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">45</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">2</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">6</div>
+                <div><img src="https://i.pinimg.com/736x/d8/9a/fe/d89afed26cba03da1cf417451b8be5ca.jpg" alt=""width='400'></div>
+                <div class="player-info">
+                    <div class="player-name">Kargabul Birinci</div>
+                    <div class="player-age">25 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">32</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">1</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="position-title">Midfielders</h2>
+        <div class="players">
+            <div class="player">
+                <div class="player-number">7</div>
+                <div><img src="https://i.pinimg.com/736x/b1/42/d0/b142d0a7c4bbbac142f9161dcc15dac5.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Amedu Bali</div>
+                    <div class="player-age">24 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">40</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">8</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">8</div>
+                <div><img src="https://i.pinimg.com/736x/f3/53/ff/f353ff21af263c568ecbe73d69476cbd.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Tirachim Jamneh</div>
+                    <div class="player-age">26 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">42</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">6</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">3</div>
+                <div><img src="https://i.pinimg.com/1200x/af/af/06/afaf06b7ef3aeea60b6ac69183f9845c.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">Mohamed Sejlu</div>
+                    <div class="player-age">23 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">35</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">5</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="position-title">Forwards</h2>
+        <div class="players">
+            <div class="player">
+                <div class="player-number">14</div>
+                <div><img src="https://i.pinimg.com/736x/75/10/cb/7510cb0559693830cf76090e1e8f86d4.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">kei kamara</div>
+                    <div class="player-age">25 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">38</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">15</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">11</div>
+                <div><img src="https://i.pinimg.com/1200x/2d/53/75/2d53754f88e11b0280a80a581bb2eb3c.jpg" alt=""width="400"></div>
+                <div class="player-info">
+                    <div class="player-name">John Doe</div>
+                    <div class="player-age">24 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">36</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">12</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-number">9</div>
+                <div><img src="https://i.pinimg.com/736x/a4/39/e4/a439e4a6dafdd7c22c4f32a238a15640.jpg" alt=""width="300"></div>
+                <div class="player-info">
+                    <div class="player-name">Idrisad Kanu</div>
+                    <div class="player-age">26 years</div>
+                    <div class="player-stats">
+                        <div><div class="stat-val">45</div><div class="stat-label">Matches</div></div>
+                        <div><div class="stat-val">18</div><div class="stat-label">Goals</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">&copy; 2025 Football Academy of Sierra Leone</div>
+</footer>
+
+</body>
+</html>

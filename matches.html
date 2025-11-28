@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASL - Matches</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root{--primary:#1f1e72;--accent:#ffcc00;--grey:#f5f7fa;--text:#333;--white:#ffffff;--shadow:0 8px 20px rgba(0,0,0,.08);}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:var(--grey);color:var(--text);line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:var(--primary);color:var(--white);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+        .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+        .logo{font-size:1.5rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+        .nav-links{display:flex;gap:1.5rem;list-style:none}
+        .nav-links a{color:var(--white);text-decoration:none;font-weight:500;transition:.3s}
+        .nav-links a:hover{color:var(--accent)}
+        .page-title{background:linear-gradient(rgba(30,60,114,.8),rgba(30,60,114,.9)),url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1350&q=80') center/cover;color:var(--white);text-align:center;padding:5rem 0}
+        .page-title h1{font-size:2.5rem;margin-bottom:.5rem}
+        .section{padding:3rem 0}
+        .matches{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+        .match{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:.3s}
+        .match:hover{transform:translateY(-5px)}
+        .match-header{background:var(--primary);color:var(--white);padding:1rem;text-align:center;font-weight:600}
+        .match-body{display:flex;align-items:center;justify-content:space-between;padding:1.5rem}
+        .team{text-align:center}
+        .team-logo{width:70px;height:70px;background:var(--grey);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--primary);margin:0 auto .5rem}
+        .vs{font-weight:700;font-size:1.2rem;color:var(--primary)}
+        .match-footer{padding:1rem;background:#f9f9f9;font-size:.9rem;display:flex;flex-direction:column;gap:.3rem}
+        .match-footer i{width:20px;color:var(--primary)}
+        footer{background:var(--primary);color:var(--white);text-align:center;padding:1.5rem 0}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo"><i class="fas fa-futbol"></i> FASL</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="matches.html" class="active">Matches</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="page-title">
+    <div class="container">
+        <h1>Upcoming Matches</h1>
+        <p>Follow our teams as they compete nation-wide</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container matches">
+        <!-- Match 1 -->
+        <div class="match">
+            <div class="match-header">Premier League</div>
+            <div class="match-body">
+                <div class="team"><div><img src="https://i.pinimg.com/736x/ce/f4/39/cef4395b2f738aa63dbbdc3ac9b23313.jpg" alt=""width="98"></div><div class="name">Leone Stars</div></div>
+                <div class="vs">VS</div>
+                <div class="team"><div><img src="https://i.pinimg.com/1200x/4c/d6/75/4cd675d130f4a4d478e98ff441f53592.jpg" alt=""width="98"></div><div class="name">BO RANGERS</div></div>
+            </div>
+            <div class="match-footer">
+                <div><i class="far fa-calendar"></i> Sat 18 Oct – 15:00 GMT</div>
+                <div><i class="fas fa-map-marker-alt"></i> Big Boyz Arena</div>
+            </div>
+        </div>
+
+        <!-- Match 2 -->
+        <div class="match">
+            <div class="match-header">National Cup Quarter-final</div>
+            <div class="match-body">
+                <div class="team"><div><img src="https://i.pinimg.com/736x/7f/52/13/7f5213b49a58c007f5a5360842966f6f.jpg" alt=""width="98"></div><div class="name">WUSUM STAR</div></div>
+                <div class="vs">VS</div>
+                <div class="team"><div><img src="https://i.pinimg.com/736x/e1/ff/6e/e1ff6e345a0688fa351a4476186b039d.jpg" alt=""width="98"></div><div class="name">FC KALLON</div></div>
+            </div>
+            <div class="match-footer">
+                <div><i class="far fa-calendar"></i> Tue 21 Oct – 18:00 GMT</div>
+                <div><i class="fas fa-map-marker-alt"></i> National Stadium</div>
+            </div>
+        </div>
+
+        <!-- Match 3 -->
+        <div class="match">
+            <div class="match-header">Championship</div>
+            <div class="match-body">
+                <div class="team"><div><img src="https://i.pinimg.com/736x/25/b7/02/25b702f914452ea8366514d4b267b754.jpg" alt=""width="98"></div><div class="name">kaku Range</div></div>
+                <div class="vs">VS</div>
+                <div class="team"><div><img src="https://i.pinimg.com/736x/c2/4f/4c/c24f4c39fe255756fb7ac68bba7c4027.jpg" alt=""width="98"></div><div class="name">FC JOHANSEN</div></div>
+            </div>
+            <div class="match-footer">
+                <div><i class="far fa-calendar"></i> Sun 18 Dec – 21:00 GMT</div>
+                <div><i class="fas fa-map-marker-alt"></i> Sinka Stevens Arena</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">&copy; 2025 Football Academy of Sierra Leone</div>
+</footer>
+
+</body>
+</html>

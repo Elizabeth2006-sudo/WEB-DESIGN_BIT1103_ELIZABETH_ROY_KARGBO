@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASL - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root{--primary:#1e3372;--accent:#ffcc00;--grey:#f5f7fa;--text:#333;--white:#ffffff;--shadow:0 8px 20px rgba(0,0,0,.08);}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:var(--grey);color:var(--text);line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:var(--primary);color:var(--white);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+        .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+        .logo{font-size:1.5rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+        .nav-links{display:flex;gap:1.5rem;list-style:none}
+        .nav-links a{color:var(--white);text-decoration:none;font-weight:500;transition:.3s}
+        .nav-links a:hover{color:var(--accent)}
+        .page-title{background:linear-gradient(rgba(30,60,114,.8),rgba(30,60,114,.9)),url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1350&q=80') center/cover;color:var(--white);text-align:center;padding:5rem 0}
+        .page-title h1{font-size:2.5rem;margin-bottom:.5rem}
+        .section{padding:3rem 0}
+        .info-card{background:var(--white);border-radius:12px;padding:2rem;margin-bottom:2rem;box-shadow:var(--shadow);border-left:5px solid var(--accent)}
+        .info-card h2{color:var(--primary);margin-bottom:1rem}
+        .info-card p{margin-bottom:.8rem;color:#555}
+        .info-card a{color:var(--primary);font-weight:500}
+        .partners{background:var(--white);padding:3rem 0}
+        .partners h2{text-align:center;margin-bottom:2rem;color:var(--primary)}
+        .partner-list{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem}
+        .partner{background:var(--grey);padding:1rem 2rem;border-radius:8px;font-weight:600;color:var(--primary)}
+        footer{background:var(--primary);color:var(--white);text-align:center;padding:1.5rem 0}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo"><i class="fas fa-futbol"></i> FASL</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="page-title">
+    <div class="container">
+        <h1>About the Academy</h1>
+        <p>Mission, history & achievements</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="info-card">
+            <h2><i class="fas fa-info-circle"></i> General Information</h2>
+            <p>The Football Academy of Sierra Leone is the premier institution for developing young football talent nationwide. We provide comprehensive training programs for aspiring athletes.</p>
+            <p>Our programs focus on technical skills, tactical understanding, physical conditioning and mental preparation. <a href="#">Learn more about our methodology</a>.</p>
+        </div>
+        <div class="info-card">
+            <h2><i class="fas fa-handshake"></i> Agency Partners</h2>
+            <p>We collaborate with national and international organisations to provide the best opportunities for our players. These partnerships help us access advanced training techniques and competitive platforms.</p>
+            <p><a href="#">View our partner directory</a> to see all organisations supporting our mission.</p>
+        </div>
+        <div class="info-card">
+            <h2><i class="fas fa-users"></i> Agency Personnel</h2>
+            <p>Our team consists of experienced coaches, sports scientists and administrative professionals dedicated to football development. Each staff member brings unique expertise to our academy.</p>
+            <p><a href="#">Meet our coaching staff</a> and learn about their qualifications.</p>
+        </div>
+        <div class="info-card">
+            <h2><i class="fas fa-landmark"></i> Agency History</h2>
+            <p>Founded in 2010, the Football Academy of Sierra Leone has grown from a small training centre to a nationally recognised institution. Our journey reflects the growing passion for football in Sierra Leone.</p>
+            <p><a href="#">Explore our timeline</a> to see key milestones in our development.</p>
+        </div>
+        <div class="info-card">
+            <h2><i class="fas fa-trophy"></i> Agency Achievements</h2>
+            <p>Our academy has produced numerous players who have gone on to successful professional careers both domestically and internationally. We take pride in their accomplishments.</p>
+            <p><a href="#">See our trophy cabinet</a> and read about our most memorable victories.</p>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <h2>Our Partners</h2>
+        <div class="partner-list">
+            <div class="partner">PIPELINX</div>
+            <div class="partner">ADAPTS STUDIO</div>
+            <div class="partner">AEON FLUX</div>
+            <div class="partner">RUPRO Inc.</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">&copy; 2025 Football Academy of Sierra Leone</div>
+</footer>
+
+</body>
+</html>
